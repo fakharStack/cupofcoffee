@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Cup Of Coffee House</title>
+  <meta name="description" content="Get in touch with Cup Of Coffee House in ELY. Address, phone, WhatsApp, opening hours, and location map.">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="bi bi-cup-hot-fill"></i>
+        <span>Cup Of Coffee House</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      
+      <!-- Backdrop Blur Overlay for Click-Away Closing -->
+      <label for="nav-toggle" class="nav-backdrop" aria-label="Close Menu"></label>
+      
+      <label for="nav-toggle" class="mobile-menu-btn" aria-label="Toggle Menu">
+        <i class="bi bi-list"></i>
+      </label>
+      
+      <!-- Side Drawer Navigation -->
+      <div class="nav-links">
+        <div class="nav-links-header">
+          <a href="index.html" class="logo">
+            <i class="bi bi-cup-hot-fill"></i>
+            <span>Cup Of Coffee</span>
+          </a>
+          <label for="nav-toggle" class="nav-close-btn" aria-label="Close Menu">
+            <i class="bi bi-x-lg"></i>
+          </label>
+        </div>
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="https://wa.me/447475201525" target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="bi bi-whatsapp"></i> Order Now
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container fade-in">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you or welcome you in person at our cafe in ELY.</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="contact-container fade-in">
+      
+      <!-- Contact Information Card -->
+      <div class="contact-info-card">
+        <h3><i class="bi bi-shop" style="color: var(--accent-primary);"></i> Visit Us</h3>
+        
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="contact-details">
+            <strong>Address</strong>
+            <span>14 Fore Hill, ELY CB7 4AF, United Kingdom</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="contact-details">
+            <strong>Phone</strong>
+            <span>+44 7475 201525</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <div class="contact-details">
+            <strong>WhatsApp</strong>
+            <span>
+              <a href="https://wa.me/447475201525" target="_blank" rel="noopener">
+                Message us on WhatsApp <i class="bi bi-arrow-right-short"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <i class="bi bi-clock-fill"></i>
+          </div>
+          <div class="contact-details">
+            <strong>Opening Hours</strong>
+            <span>Mon - Fri: 7:00 AM - 6:00 PM</span>
+            <span>Sat - Sun: 8:00 AM - 7:00 PM</span>
+          </div>
+        </div>
+        
+        <h3 style="margin-top: 32px; font-size: 1.3rem;">
+          <i class="bi bi-map-fill" style="color: var(--accent-primary);"></i> Find Us on Map
+        </h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.882191564024!2d0.2647895159330966!3d52.39965497979261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d81373574d32cb%3A0xa643669c28e9ddb8!2s14%20Fore%20Hill%2C%20Ely%20CB7%204AF%2C%20UK!5e0!3m2!1sen!2sus!4v1683103423231!5m2!1sen!2sus" 
+          width="100%" height="240" style="border:0; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+      <!-- Contact Form Card -->
+      <div class="contact-form-card ">
+        <h3 style="margin-bottom: 24px; font-size: 1.5rem; display: flex; align-items: center; gap: 10px;">
+          <i class="bi bi-envelope-fill" style="color: var(--accent-primary);"></i> Send a Message
+        </h3>
+        <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="bi bi-send-fill"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3><i class="bi bi-cup-hot-fill"></i> Cup Of Coffee House</h3>
+          <p><i class="bi bi-geo-alt-fill"></i> 14 Fore Hill, ELY CB7 4AF, United Kingdom</p>
+          <p><i class="bi bi-telephone-fill"></i> +44 7475 201525</p>
+          <a href="https://instagram.com/cupofcoffebakeryhouse" target="_blank" rel="noopener">
+            <i class="bi bi-instagram"></i> @cupofcoffebakeryhouse
+          </a>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="index.html"><i class="bi bi-chevron-right"></i> Home</a>
+          <a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a>
+          <a href="about.html"><i class="bi bi-chevron-right"></i> About</a>
+          <a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a>
+          <a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Opening Hours</h3>
+          <p><i class="bi bi-clock-fill"></i> Mon - Fri: 7:00 AM - 6:00 PM</p>
+          <p><i class="bi bi-clock-fill"></i> Sat - Sun: 8:00 AM - 7:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cup Of Coffee House. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script>
+  function sendToWhatsApp(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Collect form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value || 'No Subject';
+    const message = document.getElementById('message').value;
+
+    // Create the WhatsApp message
+    const whatsappMessage = `Hello!%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Subject:* ${encodeURIComponent(subject)}%0A*Message:* ${encodeURIComponent(message)}`;
+
+    // WhatsApp link
+    const whatsappLink = `https://wa.me/447475201525?text=${whatsappMessage}`;
+
+    // Open WhatsApp link
+    window.open(whatsappLink, '_blank');
+  }
+</script>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Cup Of Coffee House</title>
+  <meta name="description" content="View photo gallery of Cup Of Coffee House in ELY. Atmosphere, coffee preparation, and fresh pastries.">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="bi bi-cup-hot-fill"></i>
+        <span>Cup Of Coffee House</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      
+      <!-- Backdrop Blur Overlay for Click-Away Closing -->
+      <label for="nav-toggle" class="nav-backdrop" aria-label="Close Menu"></label>
+      
+      <label for="nav-toggle" class="mobile-menu-btn" aria-label="Toggle Menu">
+        <i class="bi bi-list"></i>
+      </label>
+      
+      <!-- Side Drawer Navigation -->
+      <div class="nav-links">
+        <div class="nav-links-header">
+          <a href="index.html" class="logo">
+            <i class="bi bi-cup-hot-fill"></i>
+            <span>Cup Of Coffee</span>
+          </a>
+          <label for="nav-toggle" class="nav-close-btn" aria-label="Close Menu">
+            <i class="bi bi-x-lg"></i>
+          </label>
+        </div>
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://wa.me/447475201525" target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="bi bi-whatsapp"></i> Order Now
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container fade-in">
+      <h1>Gallery</h1>
+      <p>A glimpse into our daily life and warm atmosphere at Cup Of Coffee House.</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop" alt="Cafe Interior" loading="lazy">
+        <div class="gallery-overlay">
+          <span><i class="bi bi-eye-fill"></i> Cafe Interior</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=800&auto=format&fit=crop" alt="Coffee Preparation" loading="lazy">
+        <div class="gallery-overlay">
+          <span><i class="bi bi-cup-hot-fill"></i> Artisan Brew</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop" alt="Fresh Pastries" loading="lazy">
+        <div class="gallery-overlay">
+          <span><i class="bi bi-cake2-fill"></i> Fresh Bakery</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=800&auto=format&fit=crop" alt="Customers enjoying coffee" loading="lazy">
+        <div class="gallery-overlay">
+          <span><i class="bi bi-people-fill"></i> Warm Atmosphere</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=800&auto=format&fit=crop" alt="Cafe Exterior storefront" loading="lazy">
+        <div class="gallery-overlay">
+          <span><i class="bi bi-shop"></i> Storefront in ELY</span>
+        </div>
+      </div>
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=800&auto=format&fit=crop" alt="Latte Art" loading="lazy">
+        <div class="gallery-overlay">
+          <span><i class="bi bi-heart-fill"></i> Microfoam Latte Art</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3><i class="bi bi-cup-hot-fill"></i> Cup Of Coffee House</h3>
+          <p><i class="bi bi-geo-alt-fill"></i> 14 Fore Hill, ELY CB7 4AF, United Kingdom</p>
+          <p><i class="bi bi-telephone-fill"></i> +44 7475 201525</p>
+          <a href="https://instagram.com/cupofcoffebakeryhouse" target="_blank" rel="noopener">
+            <i class="bi bi-instagram"></i> @cupofcoffebakeryhouse
+          </a>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="index.html"><i class="bi bi-chevron-right"></i> Home</a>
+          <a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a>
+          <a href="about.html"><i class="bi bi-chevron-right"></i> About</a>
+          <a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a>
+          <a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a>
+        </div>
+        <div class="footer-col">
+          <h3>Opening Hours</h3>
+          <p><i class="bi bi-clock-fill"></i> Mon - Fri: 7:00 AM - 6:00 PM</p>
+          <p><i class="bi bi-clock-fill"></i> Sat - Sun: 8:00 AM - 7:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cup Of Coffee House. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
